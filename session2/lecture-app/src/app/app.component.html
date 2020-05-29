@@ -1,0 +1,28 @@
+
+<!-- <p>This is demo parent component</p>
+<app-test-demo></app-test-demo>
+<input type="text" [(ngModel)]='testname'>
+<p>{{testname}}</p> -->
+<!-- 
+<p appBasicHightlight>this is basic directive </p>
+     <p [appBetterHighlight] ="'orange'"
+     defaultColor="pink">
+     this is basic directive </p> -->
+<!-- <div app-test-demo></div> -->
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <app-cockpit 
+      (ServerCreated)="OnServerAdded($event)"
+      ></app-cockpit>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-xs-12">
+      <app-datadisplay *ngFor="let element of serverElements"
+      [element]="element"
+      ></app-datadisplay>
+    </div>
+  </div>
+</div>
